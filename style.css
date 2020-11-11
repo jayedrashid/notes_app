@@ -4,32 +4,29 @@
     box-sizing: border-box;
 }
 
-
+#wrapper {
+	max-width:1280px;
+	margin: 0 auto;		// to bring it center
+}
 
 
 /* ------------ Pic & Date Start ------------ */
 .container{
-    padding:10px;
+
+    padding-top: 350px;
     width:460px;
     margin:0 auto;
 }
 
-.header{
-    width: 440px;
-    height:200px;
-    background-image: url(sadman_image.jpg);
-    background-size: 115% 100%;
-    background-repeat: no-repeat;
-    border-radius: 15px 15px 0 0;
-    position: relative;
-    justify-content: center;
-}
+
 
 #date{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: #FFF;
+    
+    position: relative;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    color: rgb(222, 243, 101);
     font-size: 25px;
     font-family: sans-serif;
 }
@@ -55,6 +52,9 @@ header, form {
     align-items: center;
 }
 
+.header img {
+    width: 100%;
+}
 form input, form button {
     padding: 0.5rem;
     font-size: 2rem;
@@ -81,7 +81,7 @@ form button:hover {
 }
 
 .todo-list {
-min-width: 30%;
+min-width: 50%;
 list-style: none;
 }
 
@@ -127,12 +127,58 @@ list-style: none;
 }
 
 .fall {
-    transform: translateY(8rem) rotateZ(20deg);
+    transform: translateY(8rem);
     opacity: 0;
 }
 
 footer {
     text-align: center;
-    padding: 200px;
+    padding-top: 350px;
     font-style: italic;
 }
+
+
+
+
+
+
+
+
+
+/* Responsive Part Begins Here For Mobile Devices */
+@media only screen and (max-width: 560px) {
+
+    .container {
+        display: none;
+        width:100%;
+        
+    }
+    
+    
+    #date {
+        width:100%;
+    }
+    .todo-container {
+        width:100%;
+    }
+    .todo-list {
+        min-width: 100%;
+    }
+    form, input {
+        width:100%;
+    }
+    footer {
+        margin-left: 8%;
+        min-width:92%;
+    }
+    }
+    
+    
+    
+    /* Responsive Part Begins Here For Larger Devices */
+    @media only screen and (min-width: 560px) {
+    
+    .container {
+        display: none;
+    }
+    }
