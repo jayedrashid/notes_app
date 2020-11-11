@@ -14,29 +14,35 @@
 </head>
 
 <body>
-     <!-- ------------ Pic & Date Start ------------  -->
-    <div class="container">
-        <div class="header">
-            <div id="date"></div>
+    <!-- Adding Wrapper -->
+    <div id="wrapper">
+
+        <!-- ------------ Pic & Date Start ------------  -->
+        <div class="container">
+            <div class="header">
+                <!-- <div id="date"></div> -->
+            </div>
+        </div>
+        <!-- ------------ Pic & Date End ------------  -->
+        <header>
+            <h1>Sadman's Note</h1>
+        </header>
+        <div  id="date"></div>
+        <form>
+            <input type="text" class="todo-input">
+            <button class="todo-button" type="submit">
+                <i class="fas fa-plus-square"></i>
+            </button>
+        </form>
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
         </div>
     </div>
-    <!-- ------------ Pic & Date End ------------  -->
-    <header>
-        <h1>Sadman's Note</h1>
-    </header>
-    <form>
-        <input type="text" class="todo-input">
-        <button class="todo-button" type="submit">
-            <i class="fas fa-plus-square"></i>
-        </button>
-    </form>
-    <div class="todo-container">
-        <ul class="todo-list"></ul>
-    </div>
+    <!-- Ending Wrapper -->
     <script src="script.js"></script>
 </body>
 
 
-  <footer>&copy; Copyright 2020 WorldOfJayed</footer>
+<footer>&copy; Copyright 2020 WorldOfJayed</footer>
 
 </html>
