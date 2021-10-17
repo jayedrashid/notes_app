@@ -5,7 +5,7 @@ This is a Notes App project from Dev Ed.
 
 ## Screenshots
 
-<img src="task_list.png">
+<img src="notes_app-screenshot.png">
 
 ## Features
 
